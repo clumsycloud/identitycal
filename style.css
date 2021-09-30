@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255,255,255);
+	font-family: 'Open Sans',serif; 
+   }
+
+header, footer{
+
+	background-color: rgb(0,0,0);
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.character_list{
+	background-color: rgb(50,0,0);
+}
+
+.character_list h1{
+	padding-top: 20px;
+}
+
+.character{
+	display : inline-block;
+	margin: 5% 0% 5% 5%;
+	outline: 3px solid rgb(255,0,0);
+	padding: 6px;
+}
+
+.character img{
+	height: 400px;
+}
+
+.character p{
+	font-size: 25px;
+}
+
+#victorsus{
+	margin-left: 410px;  
+}
