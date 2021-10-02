@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 *{
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
     color: rgb(255,255,255);
 	font-family: 'Open Sans',serif; 
    }
@@ -14,29 +13,66 @@ header, footer{
 	padding: 50px 0px;
 }
 
-.character_list{
-	background-color: rgb(50,0,0);
+body{
+	margin: 0;
+    padding: 0;
+    background-color: rgb(0,0,0);
 }
 
-.character_list h1{
-	padding-top: 20px;
+.characters{
+	margin:0 auto;
+	background-color: rgb(20,0,0);
+	padding-bottom: 50px;
+}
+
+.characters h1{
+	padding-top: 3%;
 }
 
 .character{
-	display : inline-block;
-	margin: 5% 0% 5% 5%;
+	display: inline-block;
+	margin: 5% 2% 5% 2%;
 	outline: 3px solid rgb(255,0,0);
 	padding: 6px;
 }
 
+.character_list{
+	text-align: center;
+	margin: 5% 15%;
+	padding: 5% auto;	
+	background-color: rgb(50,0,0);
+}
+
+.character:hover{
+	outline-color: white;
+}
+
 .character img{
-	height: 400px;
+	height: 300px;
+	width: 220px;
 }
 
 .character p{
+	margin: auto;
+}
+
+.name{
+	font-style: bold;
 	font-size: 25px;
 }
 
-#victorsus{
-	margin-left: 410px;  
+.quote{
+	color: yellow;
+	font-style: italic;
+	font-size: 15px;
+}
+
+footer {
+	height:100px;
+  	background-color:black;
+  	display: flex;
+}
+
+footer p{
+	margin:auto;
 }
