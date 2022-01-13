@@ -1,49 +1,76 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 *{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	box-sizing: border-box;
     color: rgb(255,255,255);
 	font-family: 'Open Sans',serif; 
    }
 
+#info{
+    font-size: 15px;
+    color: rgba(255,255,255,0.5)
+}
+
 header, footer{
 
-	background-color: rgb(0,0,0);
+	background-color: #03120e;
 	text-align: center;
 	padding: 50px 0px;
+}
+
+header {
+    box-shadow: 0px 12px 100px 1px rgba(0,0,0,0.6);
+}
+
+header img{
+    height: 100px;
+    width: 50%;
 }
 
 body{
 	margin: 0;
     padding: 0;
-    background-color: rgb(0,0,0);
+    background-color: #1a1d1a;
 }
 
 .characters{
 	margin:0 auto;
-	background-color: rgb(20,0,0);
 	padding-bottom: 50px;
 }
 
 .characters h1{
-	padding-top: 3%;
+	padding: 1% 0px;
+}
+
+.titles:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.01);
 }
 
 .character{
 	display: inline-block;
 	margin: 5% 2% 5% 2%;
-	outline: 3px solid rgb(255,0,0);
+    background-color: black;
+	outline: 3px solid #fca311;
 	padding: 6px;
 }
 
 .character_list{
 	text-align: center;
 	margin: 5% 15%;
-	padding: 5% auto;	
-	background-color: rgb(50,0,0);
+	padding: 2% 5%;	
+	background-color: #26413c;
+    box-shadow: 12px 12px 0px 1px rgba(0,0,0,0.6);
 }
 
+
 .character:hover{
+    cursor: pointer;
 	outline-color: white;
 }
 
@@ -62,7 +89,7 @@ body{
 }
 
 .quote{
-	color: yellow;
+	color: #fca311;
 	font-style: italic;
 	font-size: 15px;
 }
@@ -74,5 +101,33 @@ footer {
 }
 
 footer p{
-	margin:auto;
+    display: inline-block;
+    color: rgba(100,73,3,0.9);
+	margin: auto;
+}
+
+#alert {
+    display: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+
+#closebtn {
+    margin: auto 4%;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#closebtn:hover {
+  color: black;
 }
